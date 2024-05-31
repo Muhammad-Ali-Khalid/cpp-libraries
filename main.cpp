@@ -7,8 +7,6 @@ int main() {
     Dynamic2DJaggedArray<int> obj(3);
     obj.fillArray();
     obj.displayArray();
-    obj.transpose();
-    obj.displayArray();
     obj.deleteArray();
     return 0;
 }
