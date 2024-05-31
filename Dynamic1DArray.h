@@ -1,4 +1,5 @@
 
+// Muhammad Ali KHalid
 #ifndef CPP_LIBRARIES_DYNAMIC1DARRAY_CPP
 #define CPP_LIBRARIES_DYNAMIC1DARRAY_CPP
 
@@ -36,6 +37,11 @@ public:
         }
     }
 
+    int getSize() {
+        return size;
+    }
+
+    // Taking input from user to fill array
     void fillArray(T *newPtr, int newSize) {
         cout << "Enter values" << endl;
         for (int i = size; i < newSize; i++) {
@@ -49,11 +55,7 @@ public:
         for (int i = 0; i < size; i++) {
             cout << ptr[i] << "    ";
         }
-    }
-
-    void deleteArray() {
-        delete[] ptr;
-        ptr = nullptr;
+        cout << endl;
     }
 
     void resizeArray(int newSize) {
@@ -78,6 +80,11 @@ public:
                 ptr = newPtr;
             }
         }
+    }
+
+    void deleteArray() {
+        delete[] ptr;
+        ptr = nullptr;
     }
 };
 
