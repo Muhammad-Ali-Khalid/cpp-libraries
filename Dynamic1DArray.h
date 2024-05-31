@@ -1,5 +1,5 @@
 
-// Muhammad Ali KHalid
+// Muhammad Ali Khalid
 #ifndef CPP_LIBRARIES_DYNAMIC1DARRAY_CPP
 #define CPP_LIBRARIES_DYNAMIC1DARRAY_CPP
 
