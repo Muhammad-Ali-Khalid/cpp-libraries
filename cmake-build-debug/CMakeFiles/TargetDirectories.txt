@@ -1,3 +1,0 @@
-/home/muhammad-ali/CLionProjects/cpp-libraries/cmake-build-debug/CMakeFiles/cpp_libraries.dir
-/home/muhammad-ali/CLionProjects/cpp-libraries/cmake-build-debug/CMakeFiles/edit_cache.dir
-/home/muhammad-ali/CLionProjects/cpp-libraries/cmake-build-debug/CMakeFiles/rebuild_cache.dir
