@@ -28,16 +28,16 @@ public:
 
     ~Dynamic1DArray() = default;
 
+    int getSize() {
+        return size;
+    }
+
     void fillArray() {
         cout << "Enter values" << endl;
         for (int i = 0; i < size; i++) {
             cout << "Index " << i + 1 << ": ";
             cin >> ptr[i];
         }
-    }
-
-    int getSize() {
-        return size;
     }
 
     // Taking input from user to fill array
@@ -55,6 +55,23 @@ public:
             cout << ptr[i] << "    ";
         }
         cout << endl;
+    }
+
+    T valueAt(int index) {
+        if (index >= 0 && index <= size - 1)
+            return ptr[index];
+        else {
+            cout << "Index out of bounds" << endl;
+            exit(0);
+        }
+    }
+
+    void reverse() {
+        T *newPtr = new T[size];
+        for (int i = size - 1, j = 0; i >= 0; --i, ++j) {
+            newPtr[j] = ptr[i];
+        }
+        ptr = newPtr;
     }
 
     void resizeArray(int newSize) {

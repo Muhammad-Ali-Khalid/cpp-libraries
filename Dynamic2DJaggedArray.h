@@ -26,7 +26,7 @@ public:
         }
         this->rows = rows;
         ptr = new T *[rows];
-        cols = new T[rows];
+        cols = new int[rows];
         for (int i = 0; i < rows; i++) {
             cout << "Enter number of cols for row " << i + 1 << ": ";
             cin >> cols[i];
